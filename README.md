@@ -1,12 +1,12 @@
 # Project_Morse
-# YOUR_PROJECT_TITLE
+# Morse transmitter
 discord.gg/TX8fuuzq
 ### Team members
 
-* Member 1 (responsible for xxx)
-* Member 2 (responsible for xxx)
-* Member 3 (responsible for xxx)
-* ...
+* Fiala Marek
+* Neradilek Adam
+* Nesvadba Ondřej
+* Peška Vojtěch
 
 ### Table of contents
 
