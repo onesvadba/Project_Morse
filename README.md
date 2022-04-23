@@ -28,7 +28,7 @@ The characters (digits or letters) are assigned by 16 switches on the Nexys boar
 
 <a name="characters"></a>
 
-##Characters distribution
+## Characters distribution
 
 ![zadávání](https://user-images.githubusercontent.com/99417291/164945894-8c8aa583-0520-4178-bed8-b94da9691115.jpg)
 
