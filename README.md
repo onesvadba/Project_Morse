@@ -1,6 +1,5 @@
 # Project_Morse
 # Morse transmitter
-discord.gg/TX8fuuzq
 ### Team members
 
 * Fiala Marek
