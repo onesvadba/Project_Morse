@@ -11,6 +11,7 @@ discord.gg/TX8fuuzq
 ### Table of contents
 
 * [Project objectives](#objectives)
+* [Characters distribution](#characters)
 * [Hardware description](#hardware)
 * [VHDL modules description and simulations](#modules)
 * [TOP module description and simulations](#top)
@@ -24,7 +25,10 @@ The main objective of our project is to program a VHDL code, which transfers any
 
 The characters (digits or letters) are assigned by 16 switches on the Nexys board. The way characters are assigned is described in a table below. As soon as character is assigned, you can push the center button and entered character is in morse trasmitted via RGB LED. During the transmission, the switches are inactive and you can enter another character after the transmission is finished.
 
-#Characters distribution
+
+<a name="characters"></a>
+
+##Characters distribution
 
 ![zadávání](https://user-images.githubusercontent.com/99417291/164945894-8c8aa583-0520-4178-bed8-b94da9691115.jpg)
 
