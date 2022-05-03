@@ -16,6 +16,7 @@
 * [VHDL modules description and simulations](#modules)
 * [TOP module description and simulations](#top)
 * [Video](#video)
+* [Conclusion](#conclusion)
 * [References](#references)
 
 <a name="objectives"></a>
