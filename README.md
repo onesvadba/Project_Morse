@@ -39,7 +39,8 @@ The characters (digits or letters) are assigned by 16 switches on the Nexys boar
 
 ## Hardware description
 
-1. Nexys A7 Artix-7
+Nexys A7 Artix-7
+
 The Nexys A7 board is a complete, ready-to-use digital circuit development platform based on the latest Artix-7™ Field Programmable Gate Array (FPGA) from Xilinx®. With its large, high-capacity FPGA, generous external memories, and collection of USB, Ethernet, and other ports, the Nexys A7 can host designs ranging from introductory combinational circuits to powerful embedded processors. Several built-in peripherals, including an accelerometer, temperature sensor, MEMs digital microphone, a speaker amplifier, and several I/O devices allow the Nexys A7 to be used for a wide range of designs without needing any other components.
 
 <a name="modules"></a>
