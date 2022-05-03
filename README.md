@@ -64,6 +64,10 @@ Every state has defined outputs for both RGB LEDs.
 Module hex_7seg.vhd displays currently selected character on seven-segment display. Selected character on switches is used as an input. Process 7_seg_decoder selects which case is currently selected and outputs signal into the seven-segment display.
 
 
+### clock_enable
+Module clock_enable is used in order for the program not to react to every rising edge of internal clock.
+
+
 Simulation for character "9"
 ![waves](https://github.com/onesvadba/Project_Morse/blob/main/waves.PNG)
 
