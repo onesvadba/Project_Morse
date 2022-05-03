@@ -58,8 +58,9 @@ Module morse.vhd has defined states (MEZERA, TECKA, CARKA, LOMITKO, SMYCKA). Sta
 
 In p_morse process each character selection has unique state diagram, defined according to a morse code. Since every character in morse requires at least two MEZERA states (most require also multiple CARKA and TECKA states), the program needs six identical states with different names, because the program cannot go back to the same state and continue in a different path. Every character has initial state MEZERA, after clock counts to 0.5s state swithes to TECKA or CARKA, after clock counts to the defined time (1s for TECKA, 3s for CARKA), state switches to MEZERA1, etc... At the end of each transmission state is switched to LOMITKO for 1s, which tells user that character transmission in finished, then the state switches to SMYCKA which keeps on repeating until user sends another character.
 
-Every state has defined outputs for both RGB LEDs. 
+Every state has defined outputs for both RGB LEDs.
 
+Simulation for character "9"
 ![waves](https://github.com/onesvadba/Project_Morse/blob/main/waves.PNG)
 
 <a name="top"></a>
