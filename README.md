@@ -70,7 +70,7 @@ Module clock_enable is used in order for the program not to react to every risin
 
 
 ### Simulation for character "9"
-![waves](https://github.com/onesvadba/Project_Morse/blob/main/waves.PNG)
+![waves](images/waves.png)
 
 <a name="top"></a>
 
