@@ -60,6 +60,10 @@ In p_morse process each character selection has unique state diagram, defined ac
 
 Every state has defined outputs for both RGB LEDs.
 
+### hex_7seg.vhd
+Module hex_7seg.vhd displays currently selected character on seven-segment display. Selected character on switches is used as an input. Process 7_seg_decoder selects which case is currently selected and outputs signal into the seven-segment display.
+
+
 Simulation for character "9"
 ![waves](https://github.com/onesvadba/Project_Morse/blob/main/waves.PNG)
 
