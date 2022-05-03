@@ -53,7 +53,12 @@ The Nexys A7 board is a complete, ready-to-use digital circuit development platf
 
 ## VHDL modules description and simulations
 
+### morse.vhd
+Module morse.vhd has defined states (MEZERA, TECKA, CARKA, LOMITKO, SMYCKA). States MEZERA, TECKA and CARKA each have more identical states (MEZERA1, MEZERA2, etc...) due to the functionality of the program. Furthermore four different time constants (0s; 0.5s; 1s; 3s) and four different colour constants (RED, YELLOW, GREEN, BLUE) are defined. The output and input signals are defined as well. 
 
+In p_morse process for each character selection unique state diagram is defined according to a morse code. 
+
+The program cannot go back to the same state and continue in another path 
 
 ![waves](https://github.com/onesvadba/Project_Morse/blob/main/waves.PNG)
 
