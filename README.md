@@ -88,7 +88,7 @@ https://user-images.githubusercontent.com/99417291/166517196-2f939805-5b81-43a1-
 
 ## Conclusion
 
-In conclusion, we were not able to fulfill the project objectives, as the program cannot transmit chosen letter or number in morse code via RGB LED. We are, however, able to transmit one chosen character, as it is shown in the simulation waves above. For the transmission, we are using state automat. The main problem in our project is the fact, that every state has to be unique and the program cannot go back to the same state and continue in a different path, therefore we would have to define too many states. Another problem in our code is the way, how to implement the selection of a character. We use "case" function in our code, but it is not working implemented on the Nexys board. 
+In conclusion, we were not able to fulfill the project objectives, as the program cannot transmit chosen letter or number in morse code via RGB LED. We are, however, able to transmit one chosen character, as it is shown in the simulation waves above. For the transmission, we are using state automat. The main problem of our project is the fact, that every state has to be unique and the program cannot go back to the same state and continue in a different path, therefore we would have to define too many states. Another problem in our code is the way, how to implement the selection of a character. We use "case" function in our code, but it is not working implemented on the Nexys board. 
 
 <a name="references"></a>
 
