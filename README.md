@@ -86,3 +86,5 @@ Write your text here
 1. https://cs.wikipedia.org/wiki/Morseova_abeceda
 2. https://github.com/tomas-fryza/digital-electronics-1
 3. https://digilent.com/reference/programmable-logic/nexys-a7/reference-manual?redirect=1
+4. https://en.wikichip.org/wiki/seven-segment_display/representing_letters
+5. https://forum.digikey.com/t/debounce-logic-circuit-vhdl/12573
