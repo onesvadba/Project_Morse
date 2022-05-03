@@ -53,12 +53,11 @@ The Nexys A7 board is a complete, ready-to-use digital circuit development platf
 
 ## VHDL modules description and simulations
 
-Write your text here.
 
-<a name="top"></a>
 
 ![waves](https://github.com/onesvadba/Project_Morse/blob/main/waves.PNG)
 
+<a name="top"></a>
 
 ## TOP module description and simulations
 
