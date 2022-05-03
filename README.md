@@ -57,11 +57,11 @@ The Nexys A7 board is a complete, ready-to-use digital circuit development platf
 ### morse.vhd
 Module morse.vhd has defined states (MEZERA, TECKA, CARKA, LOMITKO, SMYCKA). States MEZERA, TECKA and CARKA each have more identical states (MEZERA, MEZERA1, MEZERA2, etc...) due to the functionality of the program. Furthermore four different time constants (0s; 0.5s; 1s; 3s) and four different colour constants (RED, YELLOW, GREEN, BLUE) are defined. The output and input signals are defined as well. 
 
-![waves](images/morse_sim.png)
-
 In p_morse process each character selection has unique state diagram, defined according to a morse code. Since every character in morse requires at least two MEZERA states (most require also multiple CARKA and TECKA states), the program needs six identical states with different names, because the program cannot go back to the same state and continue in a different path. Every character has initial state MEZERA, after clock counts to 0.5s state swithes to TECKA or CARKA, after clock counts to the defined time (1s for TECKA, 3s for CARKA), state switches to MEZERA1, etc... At the end of each transmission state is switched to LOMITKO for 1s, which tells user that character transmission in finished, then the state switches to SMYCKA which keeps on repeating until user sends another character.
 
 Every state has defined outputs for both RGB LEDs.
+
+![waves](images/morse_sim.png)
 
 ### hex_7seg.vhd
 Module hex_7seg.vhd displays currently selected character on seven-segment display. Selected character on switches is used as an input. Process 7_seg_decoder selects which case is currently selected and outputs signal into the seven-segment display.
