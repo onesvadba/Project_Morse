@@ -33,7 +33,9 @@ The transmission is done via states. Each state has defined output value for RGB
 
 ## State diagram
 
+Five different types of states are defined: MEZERA, TECKA, CARKA, LOMITKO, SMYCKA. Initial state is MEZERA and depending on selected character the program changes state to TECKA or CARKA, putting MEZERA in between every TECKA or CARKA state. State LOMITKO is used to tell user the character transmission finihsed. Program ends in SMYCKA state and waits for another input.
 
+State diagram shown below is for character "A".
 
 ![state_diagram](https://user-images.githubusercontent.com/99727489/166453574-a1011d20-a2e8-490f-8260-bdf5a4585289.jpg)
 
