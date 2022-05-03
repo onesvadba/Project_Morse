@@ -39,7 +39,7 @@ Five different types of states are defined: MEZERA, TECKA, CARKA, LOMITKO, SMYCK
 
 State diagram shown below is for character "A".
 
-![state_diagram](https://user-images.githubusercontent.com/99727489/166453574-a1011d20-a2e8-490f-8260-bdf5a4585289.jpg)
+![state_diagram](https://github.com/onesvadba/Project_Morse/blob/main/state_diagram.jpg)
 
 <a name="hardware"></a>
 
@@ -69,7 +69,7 @@ Module clock_enable is used in order for the program not to react to every risin
 
 
 ### Simulation for character "9"
-![waves](images/waves.png)
+![waves](https://github.com/onesvadba/Project_Morse/blob/main/waves.PNG)
 
 <a name="top"></a>
 
