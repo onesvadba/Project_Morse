@@ -1,0 +1,84 @@
+------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+------------------------------------------------------------
+-- Entity declaration for testbench
+------------------------------------------------------------
+entity tb_morse is
+    -- Entity of testbench is always empty
+end entity tb_morse;
+
+------------------------------------------------------------
+-- Architecture body for testbench
+------------------------------------------------------------
+architecture testbench of tb_morse is
+
+    -- Local constants
+    constant c_CLK_100MHZ_PERIOD : time := 10 ns;
+
+    --Local signals
+    signal s_clk_100MHz : std_logic;
+    signal s_reset      : std_logic;
+    signal s_send       : std_logic;
+    signal s_LED16      : std_logic_vector(3 - 1 downto 0);
+    signal s_abc        : std_logic_vector(15 - 1 downto 0);
+    signal s_LED17      : std_logic_vector(3 - 1 downto 0);
+    signal s_seg        : std_logic_vector(6 downto 0);
+
+begin
+    -- Connecting testbench signals with morse entity
+    uut_morse : entity work.morse
+        port map(
+            clk     => s_clk_100MHz,
+            abc_i   => s_abc,
+            send    => s_send,
+            reset   => s_reset,
+            LED16_o => s_LED16,
+            LED17_o => s_LED17);
+    
+    uut_hex_7seg : entity work.hex_7seg
+        port map(
+            abc_i => s_abc,
+            seg_o => s_seg
+        );
+    --------------------------------------------------------
+    -- Clock generation process
+    --------------------------------------------------------
+    p_clk_gen : process
+    begin
+        while now < 10000 ns loop -- 10 usec of simulation
+            s_clk_100MHz <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk_100MHz <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
+
+    --------------------------------------------------------
+    -- Reset generation process
+    --------------------------------------------------------
+    p_reset_gen : process
+    begin
+        s_reset <= '0'; wait for 200 ns; -- Reset activated
+        s_reset <= '0'; wait for 500 ns; -- Reset deactivated
+        s_reset <= '0';
+        wait;
+    end process p_reset_gen;
+
+    --------------------------------------------------------
+    -- Data generation process
+    --------------------------------------------------------
+    p_stimulus : process
+    begin
+        s_send <= '1';
+        s_abc <= "000000000100011"; 
+        assert (s_seg = "0000100")
+        report "Input combination 000000000100011 FAILED" severity error;
+        
+        wait;
+    end process p_stimulus;
+
+end architecture testbench;
