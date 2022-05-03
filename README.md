@@ -68,7 +68,7 @@ Module hex_7seg.vhd displays currently selected character on seven-segment displ
 Module clock_enable is used in order for the program not to react to every rising edge of internal clock.
 
 
-Simulation for character "9"
+### Simulation for character "9"
 ![waves](https://github.com/onesvadba/Project_Morse/blob/main/waves.PNG)
 
 <a name="top"></a>
