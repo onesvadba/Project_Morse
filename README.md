@@ -76,7 +76,7 @@ Module clock_enable is used in order for the program not to react to every risin
 
 ## TOP module description and simulations
 ![top](images/top.png)
-Write your text here.
+
 
 <a name="video"></a>
 
