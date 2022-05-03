@@ -33,6 +33,8 @@ The characters (digits or letters) are assigned by 16 switches on the Nexys boar
 
 ## State diagram
 
+![state_diagram](https://user-images.githubusercontent.com/99727489/166453574-a1011d20-a2e8-490f-8260-bdf5a4585289.jpg)
+
 <a name="hardware"></a>
 
 ## Hardware description
