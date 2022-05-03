@@ -72,6 +72,7 @@ Module hex_7seg.vhd displays currently selected character on seven-segment displ
 ### clock_enable
 Module clock_enable is used in order for the program not to react to every rising edge of internal clock.
 
+![waves](images/clock_enable_sim.png)
 
 ### Simulation for character "9"
 ![waves](images/waves.png)
