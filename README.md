@@ -11,6 +11,7 @@
 
 * [Project objectives](#objectives)
 * [Characters distribution](#characters)
+* [State diagram](#states)
 * [Hardware description](#hardware)
 * [VHDL modules description and simulations](#modules)
 * [TOP module description and simulations](#top)
@@ -31,6 +32,7 @@ The transmission is done via states. Each state has defined output value for RGB
 
 ![zadávání](https://user-images.githubusercontent.com/99417291/164990761-116f0b6f-d9df-4b99-b260-22a0c6d4a104.jpg)
 
+<a name="states"></a>
 ## State diagram
 
 Five different types of states are defined: MEZERA, TECKA, CARKA, LOMITKO, SMYCKA. Initial state is MEZERA and depending on selected character the program changes state to TECKA or CARKA, putting MEZERA in between every TECKA or CARKA state. State LOMITKO is used to tell user the character transmission finihsed. Program ends in SMYCKA state and waits for another input.
