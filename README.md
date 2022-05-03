@@ -31,7 +31,7 @@ The transmission is done via states. Each state has defined output value for RGB
 
 ## Characters distribution
 
-![zadávání](https://user-images.githubusercontent.com/99417291/164990761-116f0b6f-d9df-4b99-b260-22a0c6d4a104.jpg)
+![zadávání](https://user-images.githubusercontent.com/99417291/166519831-3549926d-fbc5-41bd-a30b-eebf5a59e510.jpg)
 
 <a name="states"></a>
 ## State diagram
