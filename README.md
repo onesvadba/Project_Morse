@@ -40,7 +40,7 @@ Five different types of states are defined: MEZERA, TECKA, CARKA, LOMITKO, SMYCK
 
 State diagram shown below is for character "A".
 
-![state_diagram](https://github.com/onesvadba/Project_Morse/blob/main/state_diagram.jpg)
+![state_diagram](images/state_diagram.jpg)
 
 <a name="hardware"></a>
 
