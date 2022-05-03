@@ -24,7 +24,7 @@ The main objective of our project is to program a VHDL code, which transfers any
 
 The characters (digits or letters) are assigned by 16 switches on the Nexys board. The way characters are assigned is described in a table below. As soon as character is assigned, you can push the center button and entered character is in morse trasmitted via RGB LED. During the transmission, the switches are inactive and you can enter another character after the transmission is finished.
 
-
+The transmission is done via states. Each state has defined output value for RGB LEDs.
 <a name="characters"></a>
 
 ## Characters distribution
@@ -32,6 +32,8 @@ The characters (digits or letters) are assigned by 16 switches on the Nexys boar
 ![zadávání](https://user-images.githubusercontent.com/99417291/164990761-116f0b6f-d9df-4b99-b260-22a0c6d4a104.jpg)
 
 ## State diagram
+
+
 
 ![state_diagram](https://user-images.githubusercontent.com/99727489/166453574-a1011d20-a2e8-490f-8260-bdf5a4585289.jpg)
 
