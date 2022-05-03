@@ -66,6 +66,8 @@ Every state has defined outputs for both RGB LEDs.
 ### hex_7seg.vhd
 Module hex_7seg.vhd displays currently selected character on seven-segment display. Selected character on switches is used as an input. Process 7_seg_decoder selects which case is currently selected and outputs signal into the seven-segment display.
 
+![waves](images/hex_7seg_sim.png)
+
 
 ### clock_enable
 Module clock_enable is used in order for the program not to react to every rising edge of internal clock.
